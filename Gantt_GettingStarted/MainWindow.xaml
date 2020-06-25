@@ -1,0 +1,36 @@
+﻿<Window x:Class="EssentialGantt.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:EssentialGantt"
+        xmlns:shared="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.Wpf"
+        xmlns:sync="http://schemas.syncfusion.com/wpf"
+        Title="Essential Gantt"
+        Width="1300"
+        Height="720"
+        Background="#FFEBEFF1"
+        Icon="App.ico"
+        WindowStartupLocation="CenterScreen">
+    <Window.DataContext>
+        <local:ViewModel />
+    </Window.DataContext>
+    <Window.Resources>
+    </Window.Resources>
+    <Grid>
+            <sync:GanttControl x:Name="Gantt"
+                               Grid.Row="1"
+                               ItemsSource="{Binding TaskCollection}"
+                             >
+                <sync:GanttControl.TaskAttributeMapping>
+                    <sync:TaskAttributeMapping  TaskIdMapping="TaskId"
+                                                TaskNameMapping="TaskName"
+                                                StartDateMapping="StartDate" 
+                                                ChildMapping="Child"                                            
+                                                FinishDateMapping="FinishDate"
+                                                DurationMapping="Duration" 
+                                                ProgressMapping="Progress"
+                                                PredecessorMapping="Predecessor"
+                                                />
+                </sync:GanttControl.TaskAttributeMapping>
+            </sync:GanttControl>
+        </Grid>
+</Window>
