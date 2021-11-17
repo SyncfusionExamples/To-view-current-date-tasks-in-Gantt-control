@@ -20,6 +20,8 @@ private void Gantt_OnLoaded(object sender, RoutedEventArgs e)
 }
 ```
 
+KB article - [To-view-current-date-tasks-in-Gantt-control](https://www.syncfusion.com/kb/7728/how-to-view-the-gantt-control-with-the-desired-date-tasks-at-load-time-in-wpf)
+
 See also
 
 [To add custom tooltip to gantt](https://help.syncfusion.com/wpf/gantt/customtooltip)
