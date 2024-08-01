@@ -13,8 +13,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Syncfusion.Windows.Controls.Gantt;
 using System.Windows.Controls.Primitives;
-using Syncfusion.Windows.Controls.Gantt.Chart;
-using Syncfusion.Windows.Controls.Gantt.Schedule;
+using Syncfusion.Windows.Controls.Gantt;
+using Syncfusion.Windows.Controls.Gantt;
 
 namespace EssentialGantt
 {
